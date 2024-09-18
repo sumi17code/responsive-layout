@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web site layout</title>
+    <style>
+        .container{
+            border: 5px double green;
+            border-radius: 10px;
+            display:flex;
+            align-items: stretch;
+            /* justify-content: space-between;
+            align-items: center; */
+            height: 300px;
+        }
+
+        .box{
+            border: 2px dashed brown;
+            /* height: 150px; */
+            width: 150px;
+            color: blue;
+            font-size: 3ex;
+            font-weight: 700;
+
+        }
+        #box-2{
+            flex-grow: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- .container>.box{I am a stupid-$}*4-->
+     <div class="container">
+        <div class="box">I am a stupid-1</div>
+        <div id="box-2" class="box">I am a stupid-2</div>
+        <!-- <div class="box">I am a stupid-3</div>
+        <div class="box">I am a stupid-4</div> -->
+     </div>
+
+
+</body>
+</html>

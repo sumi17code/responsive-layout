@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive flex</title>
 
-    
+    <style>
+        h1{
+            text-align: center;
+            color: brown;
+            font-weight: 900;
+        }
+
+        .container1{
+            display: flex;
+            gap: 10px;
+        }
+        .box{
+            background-color: aqua;
+            color: blue;
+            border: 1px solid rebeccapurple;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:576px) {
+            
+            .container1{
+                flex-direction: column;
+                
+            }
+        }
+    </style>
+
 </head>
 <body>
     <h1>Flexible flex</h1>
